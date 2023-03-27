@@ -1,4 +1,3 @@
-```
 import boto3
 import pandas as pd
 
@@ -22,7 +21,7 @@ for table in table_list:
 
 if not table_exists:
     print(f"Table {table_name} does not exist.")
-    
+
 # read the data from the table
 s3 = boto3.client('s3')
 object_key = table_location.replace('s3://', '').replace('/', '', 1)
@@ -52,5 +51,3 @@ for event in response['Payload']:
 # convert data into a dataframe and save it as a csv file
 df = pd.read_csv(pd.compat.StringIO(''.join(records)))
 df.to_csv('life_events_ccpa_filtered.csv', index=False)
-```
-
