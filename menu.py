@@ -1,2 +1,2 @@
-def menu():
+def menu(*args):
     return 'hello!'
