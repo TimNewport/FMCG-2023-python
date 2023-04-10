@@ -1,2 +1,2 @@
 def hello(name):
-    return 'Hello, {name}, from mygreatmod!'
+    return f'Hello, {name}, from mygreatmod!'
