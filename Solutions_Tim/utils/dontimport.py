@@ -1,0 +1,1 @@
+print('Do not use dontimport.py')
