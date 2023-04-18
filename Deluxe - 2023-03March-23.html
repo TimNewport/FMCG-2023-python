@@ -14539,6 +14539,10 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
   display: none;
 }
 
+@page {
+    margin: 0.5in; /* Margin for each printed piece of paper */
+}
+
 @media print {
   .jp-Cell-inputWrapper,
   .jp-Cell-outputWrapper {
@@ -14850,9 +14854,9 @@ others = 6
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># As of Python 3.8 (I think) you can do this:</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">vowels</span> <span class="si">= }</span><span class="s1">&#39;</span><span class="p">)</span>           <span class="c1"># if the = is the last character in the f-string&#39;s {}, we get name=value</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">digits</span> <span class="si">= }</span><span class="s1">&#39;</span><span class="p">)</span>        
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">others</span> <span class="si">= }</span><span class="s1">&#39;</span><span class="p">)</span>        
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">vowels</span><span class="w"> </span><span class="si">= }</span><span class="s1">&#39;</span><span class="p">)</span>           <span class="c1"># if the = is the last character in the f-string&#39;s {}, we get name=value</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">digits</span><span class="w"> </span><span class="si">= }</span><span class="s1">&#39;</span><span class="p">)</span>        
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">others</span><span class="w"> </span><span class="si">= }</span><span class="s1">&#39;</span><span class="p">)</span>        
 </pre></div>
 
      </div>
@@ -14891,7 +14895,7 @@ others = 6
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="si">= }</span><span class="s1">&#39;</span><span class="p">)</span>        
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span><span class="w"> </span><span class="si">= }</span><span class="s1">&#39;</span><span class="p">)</span>        
 </pre></div>
 
      </div>
