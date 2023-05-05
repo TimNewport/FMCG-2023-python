@@ -14539,6 +14539,10 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
   display: none;
 }
 
+@page {
+    margin: 0.5in; /* Margin for each printed piece of paper */
+}
+
 @media print {
   .jp-Cell-inputWrapper,
   .jp-Cell-outputWrapper {
@@ -16040,7 +16044,7 @@ hello(name)
 <span class="c1"># take up a bunch of lines -- as much as needed</span>
 
 <span class="k">def</span> <span class="nf">hello</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
-    <span class="sd">&#39;&#39;&#39;Returns a string, greeting the user nicely.</span>
+<span class="w">    </span><span class="sd">&#39;&#39;&#39;Returns a string, greeting the user nicely.</span>
 <span class="sd">    </span>
 <span class="sd">    Expects: one string, the name of the person to greet</span>
 <span class="sd">    Modifies: Nothing</span>
